@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushri E-Commerce</title>
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style-prefix.css">
+    <style>
+        /* Add your CSS styles here */
+        .btn-action {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay" data-overlay></div>
+    <!--
+    - MODAL
+  -->
+    <div class="modal" data-modal>
+        <div class="modal-close-overlay" data-modal-overlay></div>
+        <div class="modal-content">
+            <button class="modal-close-btn" data-modal-close>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="newsletter-img">
+                <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+            </div>
+            <div class="newsletter">
+                <form action="your_php_script.php" method="post">
+                    <div class="newsletter-header">
+                        <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+                        <p class="newsletter-desc">
+                            Subscribe to <b>Anustore</b> to get the latest products and discount updates.
+                        </p>
+                    </div>
+                    <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+                    <button type="submit" class="btn-newsletter">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--
+    - NOTIFICATION TOAST
+  -->
+    <div class="notification-toast" data-toast>
+        <button class="toast-close-btn" data-toast-close>
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <div class="toast-banner">
+            <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70">
+        </div>
+        <div class="toast-detail">
+            <p class="toast-message">
+                Someone in new just bought
+            </p>
+            <p class="toast-title">
+                Rose Gold Earrings
+            </p>
+            <p class="toast-meta">
+                <time datetime="PT2M">2 Minutes</time> ago
+            </p>
+        </div>
+    </div>
+    <!--
+    - HEADER
+  -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <ul class="header-social-container">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-alert-news">
+                    <p>
+                        <b>Free Shipping</b>
+                        This Week Order Over - $55
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="#" class="header-logo">
+                    <img src="./assets/images/logo/logo.jpg" alt="Anon's logo" width="120" height="36">
+                </a>
+                <div class="header-user-actions">
+                    <button class="action-btn" id="shoppingCartButton">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        <span class="count">0</span>
+                    </button>
+                    <a href="admin.html" class="action-btn">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="desktop-navigation-menu">
+            <div class="container">
+                <ul class="desktop-menu-category-list">
+                    <li class="menu-category">
+                        <a href="home.html" class="menu-title">home</a>
+                    </li>
+                    <li class="menu-category">
+                        <a href="jewelry.html" class="menu-title">jewellery</a>
+                    </li>
+                    <li class="menu-category">
+                        <a class="menu-title">Men's</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a href="shirt.html">Shirt</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="shortsandjeans.html">Shorts & Jeans</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="SafetyShoes.html">Safety Shoes</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="Wallet.html">Wallet</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Women's</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a href="dressandfrock.html">Dress & Frock</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="earrings.html">Earrings</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="necklace.html">Necklace</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="MakeupKit.html">Makeup Kit</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-category">
+                        <a href="perfume.html" class="menu-title">Perfume</a>
+                    </li>
+                    <li class="menu-category">
+                        <a href="aboutus.html" class="menu-title">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile-bottom-navigation">
+            <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+            <a href="admin.html" class="action-btn">
+                <ion-icon name="person-outline"></ion-icon>
+            </a>
+            <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="grid-outline"></ion-icon>
+            </button>
+        </div>
+        <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+            <div class="menu-top">
+                <h2 class="menu-title">Menu</h2>
+                <button class="menu-close-btn" data-mobile-menu-close-btn>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+            <ul class="mobile-menu-category-list">
+                <li class="menu-category">
+                    <a href="home.html" class="menu-title">Home</a>
+                </li>
+                <li class="menu-category">
+                    <a href="jewelry.html" class="menu-title">jewellery</a>
+                </li>
+                <li class="menu-category">
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Men's</p>
+                        <div>
+                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                        </div>
+                    </button>
+                    <ul class="submenu-category-list" data-accordion>
+                        <li class="submenu-category">
+                            <a href="shirt.html" class="submenu-title">Shirt</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="shortsandjeans.html" class="submenu-title">Shorts & Jeans</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="SafetyShoes.html" class="submenu-title">Safety Shoes</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="Wallet.html" class="submenu-title">Wallet</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-category">
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Women's</p>
+                        <div>
+                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                        </div>
+                    </button>
+                    <ul class="submenu-category-list" data-accordion>
+                        <li class="submenu-category">
+                            <a href="dressandfrock.html" class="submenu-title">Dress & Frock</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="earrings.html" class="submenu-title">Earrings</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="necklace.html" class="submenu-title">Necklace</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="MakeupKit.html" class="submenu-title">Makeup Kit</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-category">
+                    <a href="perfume.html" class="menu-title">Perfume</a>
+                </li>
+                <li class="menu-category">
+                    <a href="aboutus.html" class="menu-title">About us</a>
+                </li>
+            </ul>
+            <div class="menu-bottom">
+                <ul class="menu-social-container">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--
+    - MAIN
+  -->
+    <main>
+        <!--
+      - PRODUCT
+    -->
+        <div class="product-container">
+            <div class="container">
+                <div class="d-flex position-relative">
+                    <img src=".\assets\images\Screenshot 2024-02-14 145800.png" class="flex-shrink-0 me-3" alt="...">
+                    <div>
+                        <p>
+                            This button is used to order the product. When this button is clicked, a popup message will
+                            appear asking for the name, phone number, email, and address to place the order for the
+                            product. This button is for providing the reason that our company accepts only cash on
+                            delivery.
+                        </p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="d-flex position-relative">
+                        <h1>Unavailable product</h1>
+                        <div>
+                            <p>Some products are not yet available on our website. We apologize for that. the
+                                non-existent products are for display and will be added to our store in the next update
+                            </p>
+                        </div>
+                    </div>
+                    <!--
+            - PRODUCT GRID
+          -->
+                    <div class="product-main">
+                        <div class="row g-0 bg-body-secondary position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4">
+                                <h1> What will be seen in the next update?</h1>
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0">
+                                <p>You will see the availability of the new product in the next update. There will be
+                                    online payment options and you will get electronic device solution
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

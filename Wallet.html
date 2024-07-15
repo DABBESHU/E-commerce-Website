@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushri E-Commerce</title>
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style-prefix.css">
+    <style>
+        /* Add your CSS styles here */
+        .btn-action {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay" data-overlay></div>
+    <!--
+    - MODAL
+  -->
+    <div class="modal" data-modal>
+        <div class="modal-close-overlay" data-modal-overlay></div>
+        <div class="modal-content">
+            <button class="modal-close-btn" data-modal-close>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="newsletter-img">
+                <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+            </div>
+            <div class="newsletter">
+                <form action="your_php_script.php" method="post">
+                    <div class="newsletter-header">
+                        <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+                        <p class="newsletter-desc">
+                            Subscribe to <b>Anustore</b> to get the latest products and discount updates.
+                        </p>
+                    </div>
+                    <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+                    <button type="submit" class="btn-newsletter">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--
+    - NOTIFICATION TOAST
+  -->
+    <div class="notification-toast" data-toast>
+        <button class="toast-close-btn" data-toast-close>
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <div class="toast-banner">
+            <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70">
+        </div>
+        <div class="toast-detail">
+            <p class="toast-message">
+                Someone in new just bought
+            </p>
+            <p class="toast-title">
+                Rose Gold Earrings
+            </p>
+            <p class="toast-meta">
+                <time datetime="PT2M">2 Minutes</time> ago
+            </p>
+        </div>
+    </div>
+    <!--
+    - HEADER
+  -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <ul class="header-social-container">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-alert-news">
+                    <p>
+                        <b>Free Shipping</b>
+                        This Week Order Over - $55
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="#" class="header-logo">
+                    <img src="./assets/images/logo/logo.jpg" alt="Anon's logo" width="120" height="36">
+                </a>
+                <div class="header-user-actions">
+                    <button class="action-btn" id="shoppingCartButton">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        <span class="count">0</span>
+                    </button>
+                    <a href="admin.html" class="action-btn">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="desktop-navigation-menu">
+            <div class="container">
+                <ul class="desktop-menu-category-list">
+                    <li class="menu-category">
+                        <a href="home.html" class="menu-title">home</a>
+                    </li>
+                    <li class="menu-category">
+                        <a href="jewelry.html" class="menu-title">jewellery</a>
+                    </li>
+                    <li class="menu-category">
+                        <a class="menu-title">Men's</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a href="shirt.html">Shirt</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="shortsandjeans.html">Shorts & Jeans</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="SafetyShoes.html">Safety Shoes</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="Wallet.html">Wallet</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Women's</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a href="dressandfrock.html">Dress & Frock</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="earrings.html">Earrings</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="necklace.html">Necklace</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="MakeupKit.html">Makeup Kit</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-category">
+                        <a href="perfume.html" class="menu-title">Perfume</a>
+                    </li>
+                    <li class="menu-category">
+                        <a href="aboutus.html" class="menu-title">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile-bottom-navigation">
+            <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+            <a href="admin.html" class="action-btn">
+                <ion-icon name="person-outline"></ion-icon>
+            </a>
+            <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="grid-outline"></ion-icon>
+            </button>
+        </div>
+        <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+            <div class="menu-top">
+                <h2 class="menu-title">Menu</h2>
+                <button class="menu-close-btn" data-mobile-menu-close-btn>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+            <ul class="mobile-menu-category-list">
+                <li class="menu-category">
+                    <a href="home.html" class="menu-title">Home</a>
+                </li>
+                <li class="menu-category">
+                    <a href="jewelry.html" class="menu-title">jewellery</a>
+                </li>
+                <li class="menu-category">
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Men's</p>
+                        <div>
+                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                        </div>
+                    </button>
+                    <ul class="submenu-category-list" data-accordion>
+                        <li class="submenu-category">
+                            <a href="shirt.html" class="submenu-title">Shirt</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="shortsandjeans.html" class="submenu-title">Shorts & Jeans</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="SafetyShoes.html" class="submenu-title">Safety Shoes</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="Wallet.html" class="submenu-title">Wallet</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-category">
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Women's</p>
+                        <div>
+                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                        </div>
+                    </button>
+                    <ul class="submenu-category-list" data-accordion>
+                        <li class="submenu-category">
+                            <a href="dressandfrock.html" class="submenu-title">Dress & Frock</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="earrings.html" class="submenu-title">Earrings</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="necklace.html" class="submenu-title">Necklace</a>
+                        </li>
+                        <li class="submenu-category">
+                            <a href="MakeupKit.html" class="submenu-title">Makeup Kit</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-category">
+                    <a href="perfume.html" class="menu-title">Perfume</a>
+                </li>
+                <li class="menu-category">
+                    <a href="aboutus.html" class="menu-title">About us</a>
+                </li>
+            </ul>
+            <div class="menu-bottom">
+                <ul class="menu-social-container">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--
+    - MAIN
+  -->
+    <main>
+        <!--
+      - PRODUCT
+    -->
+        <div class="product-container">
+            <div class="container">
+                <!--
+          - SIDEBAR
+        -->
+                <div class="sidebar  has-scrollbar" data-mobile-menu>
+                    <div class="sidebar-category">
+                        <div class="sidebar-top">
+                            <h2 class="sidebar-title">Category</h2>
+                            <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+                        <ul class="sidebar-menu-category-list">
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="./assets/images/icons/dress.svg" alt="clothes" width="20" height="20"
+                                            class="menu-title-img">
+                                        <p class="menu-title">Clothes</p>
+                                    </div>
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">24</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">shorts & jeans</p>
+                                            <data value="60" class="stock" title="Available Stock">15</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">jacket</p>
+                                            <data value="50" class="stock" title="Available Stock">10</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">dress & frock</p>
+                                            <data value="87" class="stock" title="Available Stock">24</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="./assets/images/icons/shoes.svg" alt="footwear" class="menu-title-img"
+                                            width="20" height="20">
+                                        <p class="menu-title">Footwear</p>
+                                    </div>
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Sports</p>
+                                            <data value="45" class="stock" title="Available Stock">8</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Formal</p>
+                                            <data value="75" class="stock" title="Available Stock">12</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Casual</p>
+                                            <data value="35" class="stock" title="Available Stock">10</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Safety Shoes</p>
+                                            <data value="26" class="stock" title="Available Stock">5</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="./assets/images/icons/jewelry.svg" alt="clothes"
+                                            class="menu-title-img" width="20" height="20">
+                                        <p class="menu-title">Jewelry</p>
+                                    </div>
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Earrings</p>
+                                            <data value="46" class="stock" title="Available Stock">15</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Couple Rings</p>
+                                            <data value="73" class="stock" title="Available Stock">14</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Necklace</p>
+                                            <data value="61" class="stock" title="Available Stock">11</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="./assets/images/icons/perfume.svg" alt="perfume"
+                                            class="menu-title-img" width="20" height="20">
+                                        <p class="menu-title">Perfume</p>
+                                    </div>
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Clothes Perfume</p>
+                                            <data value="12" class="stock" title="Available Stock">12 pcs</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Deodorant</p>
+                                            <data value="60" class="stock" title="Available Stock">9 pcs</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="./assets/images/icons/glasses.svg" alt="glasses"
+                                            class="menu-title-img" width="20" height="20">
+                                        <p class="menu-title">Glasses</p>
+                                    </div>
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Sunglasses</p>
+                                            <data value="50" class="stock" title="Available Stock">50</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Lenses</p>
+                                            <data value="48" class="stock" title="Available Stock">48</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="./assets/images/icons/bag.svg" alt="bags" class="menu-title-img"
+                                            width="20" height="20">
+                                        <p class="menu-title">Bags</p>
+                                    </div>
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shopping Bag</p>
+                                            <data value="62" class="stock" title="Available Stock">12</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Gym Backpack</p>
+                                            <data value="35" class="stock" title="Available Stock">9</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Purse</p>
+                                            <data value="80" class="stock" title="Available Stock">12</data>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Wallet</p>
+                                            <data value="75" class="stock" title="Available Stock">10</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-showcase">
+                        <h3 class="showcase-heading">best sellers</h3>
+                        <div class="showcase-wrapper">
+                            <div class="showcase-container">
+                                <div class="showcase">
+                                    <a href="#" class="showcase-img-box">
+                                        <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75"
+                                            height="75" class="showcase-img">
+                                    </a>
+                                    <div class="showcase-content">
+                                        <a href="#">
+                                            <h4 class="showcase-title">baby fabric shoes</h4>
+                                        </a>
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                        <div class="price-box">
+                                            <del>$5.00</del>
+                                            <p class="price">$4.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase">
+                                    <a href="#" class="showcase-img-box">
+                                        <img src="./assets/images/products/2.jpg" alt="men's hoodies t-shirt"
+                                            class="showcase-img" width="75" height="75">
+                                    </a>
+                                    <div class="showcase-content">
+                                        <a href="#">
+                                            <h4 class="showcase-title">men's hoodies t-shirt</h4>
+                                        </a>
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-half-outline"></ion-icon>
+                                        </div>
+                                        <div class="price-box">
+                                            <del>$17.00</del>
+                                            <p class="price">$7.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase">
+                                    <a href="#" class="showcase-img-box">
+                                        <img src="./assets/images/products/3.jpg" alt="girls t-shirt"
+                                            class="showcase-img" width="75" height="75">
+                                    </a>
+                                    <div class="showcase-content">
+                                        <a href="#">
+                                            <h4 class="showcase-title">girls t-shirt</h4>
+                                        </a>
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-half-outline"></ion-icon>
+                                        </div>
+                                        <div class="price-box">
+                                            <del>$5.00</del>
+                                            <p class="price">$3.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase">
+                                    <a href="#" class="showcase-img-box">
+                                        <img src="./assets/images/products/4.jpg" alt="woolen hat for men"
+                                            class="showcase-img" width="75" height="75">
+                                    </a>
+                                    <div class="showcase-content">
+                                        <a href="#">
+                                            <h4 class="showcase-title">woolen hat for men</h4>
+                                        </a>
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                        <div class="price-box">
+                                            <del>$15.00</del>
+                                            <p class="price">$12.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <!--
+            - PRODUCT GRID
+          -->
+                    <div class="product-main">
+                        <div class="product-grid">
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/_Ford v2_ Vintage Russet  Slim Leather Wallet.jpg"
+                                        width="300" class="product-img default">
+                                    <img src="./assets/images/Wallet/_Ford v2_ Vintage Russet  Slim Leather Wallet.jpg"
+                                        class="product-img hover" width="300">
+                                    <p class="showcase-badge angle black ">sale</p>
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton177">
+                                            <ion-icon name="heart-outline" id="heartIcon177"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product177">
+                                            <button class="btn-action addToCartButton" data-product-id="177"
+                                                data-price="14.00" data-name="Vintage Russet Slim Leather Wallet">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">Wallet</a>
+                                    <a>
+                                        <h3 class="showcase-title">Vintage Russet Slim Leather Wallet</h3>
+                                    </a>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$14.00</p>
+                                        <del>$16.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/8 Essential Style tips for men in their 20s.jpg"
+                                        class="product-img default" width="300">
+                                    <img src="./assets/images/Wallet/8 Essential Style tips for men in their 20s.jpg"
+                                        class="product-img hover" width="300">
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton178">
+                                            <ion-icon name="heart-outline" id="heartIcon178"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product178">
+                                            <button class="btn-action addToCartButton" data-product-id="178"
+                                                data-price="15.00" data-name="Essential Style tips">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">Wallet</a>
+                                    <h3>
+                                        <a class="showcase-title">Essential Style tips</a>
+                                    </h3>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$15.00</p>
+                                        <del>$19.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/Altitude Billfold.jpg" class="product-img default"
+                                        width="300">
+                                    <img src="./assets/images/Wallet/Altitude Billfold.jpg" class="product-img hover"
+                                        width="300">
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton179">
+                                            <ion-icon name="heart-outline" id="heartIcon179"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product179">
+                                            <button class="btn-action addToCartButton" data-product-id="179"
+                                                data-price="18.00" data-name="Altitude Billfold">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">Wallet</a>
+                                    <h3>
+                                        <a class="showcase-title">Altitude Billfold</a>
+                                    </h3>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$18.00</p>
+                                        <del>$25.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/Best-Selling Vegan & Sustainable Fashion.jpg"
+                                        class="product-img default" width="300">
+                                    <img src="./assets/images/Wallet/Best-Selling Vegan & Sustainable Fashion.jpg"
+                                        class="product-img hover" width="300">
+                                    <p class="showcase-badge angle pink">new</p>
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton180">
+                                            <ion-icon name="heart-outline" id="heartIcon180"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product180">
+                                            <button class="btn-action addToCartButton" data-product-id="180"
+                                                data-price="17.00" data-name="Vegan & Sustainable Fashion">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">Wallet</a>
+                                    <h3>
+                                        <a class="showcase-title">Vegan & Sustainable Fashion</a>
+                                    </h3>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$17.00</p>
+                                        <del>$25.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/BOSTANTEN Genuine Leather Wallets for Men Bifold RFID Blocking Wallet with 2 ID Window.jpg"
+                                        class="product-img default" width="300">
+                                    <img src="./assets/images/Wallet/BOSTANTEN Genuine Leather Wallets for Men Bifold RFID Blocking Wallet with 2 ID Window.jpg"
+                                        class="product-img hover" width="300">
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton181">
+                                            <ion-icon name="heart-outline" id="heartIcon181"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product181">
+                                            <button class="btn-action addToCartButton" data-product-id="181"
+                                                data-price="19.00" data-name="Genuine Leather Wallets for Men">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">Wallet</a>
+                                    <h3>
+                                        <a class="showcase-title">Genuine Leather Wallets for Men</a>
+                                    </h3>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$19.00</p>
+                                        <del>$23.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/Dosh Wallets _ Designer Men's Card Holders.jpg"
+                                        class="product-img default" width="300">
+                                    <img src="./assets/images/Wallet/Dosh Wallets _ Designer Men's Card Holders.jpg"
+                                        class="product-img hover" width="300">
+                                    <p class="showcase-badge angle black">sale</p>
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton182">
+                                            <ion-icon name="heart-outline" id="heartIcon182"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product182">
+                                            <button class="btn-action addToCartButton" data-product-id="182"
+                                                data-price="21.00" data-name="Card Holders">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">Wallet</a>
+                                    <h3>
+                                        <a class="showcase-title">Card Holders</a>
+                                    </h3>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$21.00</p>
+                                        <del>$24.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/Leather Mens PERSONALIZED Wallet MONOGRAMMED GIFT CUSTOM COOL Slim Wallet Bifold for Men - Coffee.jpg"
+                                        class="product-img default" width="300">
+                                    <img src="./assets/images/Wallet/Leather Mens PERSONALIZED Wallet MONOGRAMMED GIFT CUSTOM COOL Slim Wallet Bifold for Men - Coffee.jpg"
+                                        class="product-img hover" width="300">
+                                    <p class="showcase-badge angle black">sale</p>
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton183">
+                                            <ion-icon name="heart-outline" id="heartIcon183"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product183">
+                                            <button class="btn-action addToCartButton" data-product-id="183"
+                                                data-price="10.00" data-name="monogrammed gift custom cool slim wallet">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">Wallet</a>
+                                    <h3>
+                                        <a class="showcase-title">monogrammed gift custom cool slim wallet</a>
+                                    </h3>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$10.00</p>
+                                        <del>$12.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/RFID Compact Note Wallet.jpg"
+                                        class="product-img default" width="300">
+                                    <img src="./assets/images/Wallet/RFID Compact Note Wallet.jpg"
+                                        class="product-img hover" width="300">
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton184">
+                                            <ion-icon name="heart-outline" id="heartIcon184"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product184">
+                                            <button class="btn-action addToCartButton" data-product-id="184"
+                                                data-price="15.00" data-name="RFID Compact Note Wallet">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">Wallet</a>
+                                    <h3>
+                                        <a class="showcase-title">RFID Compact Note Wallet</a>
+                                    </h3>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$15.00</p>
+                                        <del>$22.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/Sterling Billfold Wallet with 3 C_C & Purse.jpg"
+                                        class="product-img default" width="300">
+                                    <img src="./assets/images/Wallet/Sterling Billfold Wallet with 3 C_C & Purse.jpg"
+                                        class="product-img hover" width="300">
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton185">
+                                            <ion-icon name="heart-outline" id="heartIcon185"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product185">
+                                            <button class="btn-action addToCartButton" data-product-id="185"
+                                                data-price="22.00" data-name="Sterling Billfold Wallet">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">wallet</a>
+                                    <h3>
+                                        <a class="showcase-title">Sterling Billfold Wallet</a>
+                                    </h3>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$22.00</p>
+                                        <del>$25.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/This item is unavailable - Etsy.jpg"
+                                        class="product-img default" width="300">
+                                    <img src="./assets/images/Wallet/This item is unavailable - Etsy.jpg"
+                                        class="product-img hover" width="300">
+                                    <p class="showcase-badge angle black">sale</p>
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton186">
+                                            <ion-icon name="heart-outline" id="heartIcon186"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product186">
+                                            <button class="btn-action addToCartButton" data-product-id="186"
+                                                data-price="18.00" data-name="Leather wallet">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">Wallet</a>
+                                    <h3>
+                                        <a class="showcase-title">Leather wallet</a>
+                                    </h3>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$18.00</p>
+                                        <del>$24.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/Vintage Men Leather Luxury Wallet - Blue.jpg"
+                                        class="product-img default" width="300">
+                                    <img src="./assets/images/Wallet/Vintage Men Leather Luxury Wallet - Blue.jpg"
+                                        class="product-img hover" width="300">
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton187">
+                                            <ion-icon name="heart-outline" id="heartIcon187"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product187">
+                                            <button class="btn-action addToCartButton" data-product-id="187"
+                                                data-price="41.00" data-name="Vintage Men Leather Luxury Wallet">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">Wallet</a>
+                                    <h3>
+                                        <a class="showcase-title">Vintage Men Leather Luxury Wallet</a>
+                                    </h3>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$41.00</p>
+                                        <del>$50.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase">
+                                <div class="showcase-banner">
+                                    <img src="./assets/images/Wallet/Wearth joins forces with Veo.jpg"
+                                        class="product-img default" width="300">
+                                    <img src="./assets/images/Wallet/Wearth joins forces with Veo.jpg"
+                                        class="product-img hover" width="300">
+                                    <p class="showcase-badge angle pink">new</p>
+                                    <div class="showcase-actions">
+                                        <button class="btn-action" id="heartButton188">
+                                            <ion-icon name="heart-outline" id="heartIcon188"></ion-icon>
+                                        </button>
+                                        <div class="product" id="product188">
+                                            <button class="btn-action addToCartButton" data-product-id="188"
+                                                data-price="14.00" data-name="Wearth joins forces with Veo">
+                                                <ion-icon name="bag-add-outline"></ion-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="showcase-content">
+                                    <a class="showcase-category">Wallet</a>
+                                    <h3>
+                                        <a class="showcase-title">Wearth joins forces with Veo</a>
+                                    </h3>
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price">$14.00</p>
+                                        <del>$19.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        //you like the product then you click the heart shape button. they will be show red heart
+        const heartButtons = [];
+        const heartIcons = [];
+        for (let i = 177; i <= 188; i++) {
+            heartButtons.push(document.getElementById(`heartButton${i}`));
+            heartIcons.push(document.getElementById(`heartIcon${i}`));
+        }
+        for (let i = 0; i < heartButtons.length; i++) {
+            heartButtons[i].addEventListener('click', function () {
+                toggleHeartState(heartIcons[i]);
+                saveHeartState(i);
+            });
+        }
+        // Load heart state when the page loads
+        window.addEventListener('load', function () {
+            for (let i = 0; i < heartIcons.length; i++) {
+                const savedState = localStorage.getItem(`heartState${i}`);
+                if (savedState === 'red') {
+                    heartIcons[i].setAttribute('name', 'heart');
+                    heartIcons[i].style.color = 'red';
+                }
+            }
+        });
+        function toggleHeartState(heartIcon) {
+            if (heartIcon.getAttribute('name') === 'heart-outline') {
+                heartIcon.setAttribute('name', 'heart');
+                heartIcon.style.color = 'red';
+            } else {
+                heartIcon.setAttribute('name', 'heart-outline');
+                heartIcon.style.color = ''; // Reset to default color
+            }
+        }
+        function saveHeartState(index) {
+            const heartIcon = heartIcons[index];
+            const state = heartIcon.style.color === 'red' ? 'red' : 'outline';
+            localStorage.setItem(`heartState${index}`, state);
+        }
+        // add to the shop cart
+        //when shop bag is show green tick mark it's mean the product is add into the card 
+        // Load product states when the page loads
+        window.addEventListener('load', function () {
+            loadProductStates();
+        });
+        // Add event listeners to each button
+        for (let i = 177; i <= 188; i++) {
+            const button = document.querySelector(`#product${i} .addToCartButton`);
+            button.addEventListener('click', function () {
+                toggleIcon(i);
+                saveProductState(i);
+            });
+        }
+        // Function to toggle icon based on product index
+        function toggleIcon(index) {
+            const ionIcon = document.querySelector(`#product${index} ion-icon`);
+            if (ionIcon.getAttribute('name') === 'bag-add-outline') {
+                ionIcon.setAttribute('name', 'checkmark-circle-outline');
+                ionIcon.style.color = 'green';
+            } else {
+                ionIcon.setAttribute('name', 'bag-add-outline');
+                ionIcon.style.color = ''; // Reset to default color
+            }
+        }
+        // Function to save product state
+        function saveProductState(index) {
+            const ionIcon = document.querySelector(`#product${index} ion-icon`);
+            const state = ionIcon.getAttribute('name');
+            localStorage.setItem(`productState${index}`, state);
+        }
+        // Function to load product states when the page loads
+        function loadProductStates() {
+            for (let i = 177; i <= 188; i++) {
+                const savedState = localStorage.getItem(`productState${i}`);
+                if (savedState === 'checkmark-circle-outline') {
+                    const ionIcon = document.querySelector(`#product${i} ion-icon`);
+                    ionIcon.setAttribute('name', 'checkmark-circle-outline');
+                    ionIcon.style.color = 'green';
+                }
+            }
+        }
+        //bagage code
+        let selectedProducts = {};
+        // Function to update the shopping cart count
+        function updateCartCount() {
+            document.querySelector('.count').textContent = Object.keys(selectedProducts).length;
+        }
+        // Function to save selected products data to localStorage
+        function saveSelectedProducts() {
+            localStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
+        }
+        // Function to load selected products data from localStorage
+        function loadSelectedProducts() {
+            const savedProducts = localStorage.getItem('selectedProducts');
+            if (savedProducts) {
+                selectedProducts = JSON.parse(savedProducts);
+                updateCartCount();
+            }
+        }
+        // Load saved selected products data when the page loads
+        document.addEventListener('DOMContentLoaded', loadSelectedProducts);
+        // Function to handle click on Add to Cart button for each product
+        document.querySelectorAll('.addToCartButton').forEach(button => {
+            button.addEventListener('click', function () {
+                const productId = button.getAttribute('data-product-id');
+                const price = parseFloat(button.getAttribute('data-price'));
+                if (selectedProducts[productId]) {
+                    // If the product is already selected, deselect it
+                    delete selectedProducts[productId];
+                    button.classList.remove('selected'); // Remove visual indication
+                } else {
+                    // If the product is not selected, select it
+                    selectedProducts[productId] = { price };
+                    button.classList.add('selected'); // Add visual indication
+                }
+                updateCartCount(); // Update cart count in UI
+                saveSelectedProducts(); // Save selected products data
+            });
+        });
+        // Function to handle click on Shopping Cart button
+        document.querySelector('#shoppingCartButton').addEventListener('click', function () {
+            // Show selected product information
+            const selectedProductIds = Object.keys(selectedProducts);
+            let totalPrice = 0;
+            selectedProductIds.forEach(productId => {
+                totalPrice += selectedProducts[productId].price;
+            });
+            alert(`Selected ${selectedProductIds.length} product(s) with a total price of $${totalPrice.toFixed(2)}`);
+        });
+        /*popup*/
+        document.querySelectorAll(".addToCartButton").forEach(function (button) {
+            button.addEventListener("click", function () {
+                var productId = this.getAttribute("data-product-id");
+                var productPrice = this.getAttribute("data-price");
+                var productName = this.getAttribute("data-name"); // Retrieve product name from the clicked button
+                var customerName = prompt("Please enter your name:");
+                var customerPhone = prompt("Please enter your phone number:");
+                var customerEmail = prompt("Please enter your email address:");
+                var customerAddress = prompt("Please enter your address:");
+                if (customerName && customerPhone && customerEmail && customerAddress) {
+                    var formData = new FormData();
+                    formData.append("product_name", productName);
+                    formData.append("product_price", productPrice);
+                    formData.append("customer_name", customerName);
+                    formData.append("customer_phone", customerPhone);
+                    formData.append("customer_email", customerEmail);
+                    formData.append("customer_address", customerAddress);
+                    fetch("store_order.php", {
+                        method: "POST",
+                        body: formData
+                    })
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error("Network response was not ok");
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            alert(data.message);
+                        })
+                        .catch(error => {
+                            console.error("Error:", error);
+                            alert("An error occurred while processing your request.");
+                        });
+                } else {
+                    alert("Please provide all necessary information.");
+                }
+            });
+        });
+
+    </script>
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
