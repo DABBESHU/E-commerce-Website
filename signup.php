@@ -6,9 +6,9 @@ if(isset($_POST['signup'])) {
     // Connect to your database
     
     $db_host = 'localhost';
-    $db_username = 'id21830482_anushrigurav';
-    $db_password = 'Anushri$07';
-    $db_name = 'id21830482_anushri';
+    $db_username = '';
+    $db_password = '';
+    $db_name = '';
 
     $conn = mysqli_connect($db_host, $db_username, $db_password, $db_name);
 
