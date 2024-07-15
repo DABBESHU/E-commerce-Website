@@ -11,9 +11,9 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 if(isset($_POST["username"]) && isset($_POST["password"])) {
     // Change these variables to match your database credentials
     $db_host = 'localhost';
-    $db_username = 'id21830482_anushrigurav';
-    $db_password = 'Anushri$07';
-    $db_name = 'id21830482_anushri';
+    $db_username = '';
+    $db_password = '';
+    $db_name = '';
 
     // Connect to the database
     $conn = new mysqli($db_host, $db_username, $db_password, $db_name);
