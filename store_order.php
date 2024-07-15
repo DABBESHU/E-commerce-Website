@@ -18,9 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Database connection parameters
     $servername = "localhost";
-    $username = "id21830482_anushrigurav";
-    $password = "Anushri$07";
-    $dbname = "id21830482_anushri";
+    $username = "";
+    $password = "";
+    $dbname = "";
 
     try {
         // Create connection
